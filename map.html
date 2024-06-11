@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+    <link rel="stylesheet" href = "styles.css"/>
+    <script src="plugins/L.Control.Layers.Tree.js"></script>
+    <link rel = "stylesheet" href = "plugins/L.Control.Layers.Tree.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1 class = "display-2" style = "text-align: center;">Litmus Projects</h1>
+    <div id = "mapWrapper">
+        <div id="map"></div>
+        <div id = "infoWrapper">
+            <ul class="list-group">
+                <li class="list-group-item" id = "Department"><b>Department</b>: </li>
+                <li class="list-group-item" id = "Area"><b>Area</b>: </li>
+                <li class="list-group-item" id = "Agency/Collaborator"><b>Agency/Collaborator</b>: </li>
+                <li class="list-group-item" id = "Project Status"><b>Project Status</b>: </li>
+                <li class="list-group-item" id = "writeup"><b>Project Summary</b>:<br> </li>
+            </ul>
+            <div id = "buttons">
+                <button type = "button" class = "btn btn-light" id = "prev" onclick = "prevProject()">Previous Project</button>
+                <div id = "counter"></div>
+                <button type = "button" class = "btn btn-light" id = "next" onclick = "nextProject()">Next Project</button>
+            </div>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
