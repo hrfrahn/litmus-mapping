@@ -90,12 +90,12 @@ var projectsByArea = {
 }
 var controlTest = []
 
-filenames = []
+filenames = [ "BetaGov.geojson", "COSSUP.geojson", "FBJC.geojson", "General.geojson", "SCA.geojson", "SCF.geojson" ]
 
 //main processing function
 function fetchData(){
-    $.getJSON('./projects', data => {
-        filenames = data; //read names of departments into array for processing
+    // $.getJSON('./projects', data => {
+        //filenames = data; //read names of departments into array for processing
         var obj = {}
         var i = filenames.length-1;
         for(i = 0; i < filenames.length; i++){
@@ -279,7 +279,7 @@ function fetchData(){
 
             });
         })
-    })
+    //})
 
 }
 
